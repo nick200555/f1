@@ -4,6 +4,7 @@
   "document_type": "Member",
   "is_active": 1,
   "name": "Member Onboarding Workflow",
+  "workflow_name": "Member Onboarding Workflow",
   "override_status": 1,
   "states": [
    {
