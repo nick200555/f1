@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:EQP-{YYYY}-{####}",
+ "creation": "2026-04-27 16:50:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "equipment_details_sb",
+  "equipment_name",
+  "category",
+  "asset",
+  "column_break_5",
+  "serial_number",
+  "purchase_date",
+  "status",
+  "maintenance_sb",
+  "maintenance_frequency",
+  "last_maintenance_date",
+  "next_maintenance_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "equipment_details_sb",
+   "fieldtype": "Section Break",
+   "label": "Equipment Details"
+  },
+  {
+   "fieldname": "equipment_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Equipment Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "Cardio\nStrength\nWeights\nOther"
+  },
+  {
+   "fieldname": "asset",
+   "fieldtype": "Link",
+   "label": "Asset",
+   "options": "Asset"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "purchase_date",
+   "fieldtype": "Date",
+   "label": "Purchase Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Operational\nUnder Maintenance\nOut of Service",
+   "default": "Operational"
+  },
+  {
+   "fieldname": "maintenance_sb",
+   "fieldtype": "Section Break",
+   "label": "Maintenance Info"
+  },
+  {
+   "fieldname": "maintenance_frequency",
+   "fieldtype": "Select",
+   "label": "Maintenance Frequency",
+   "options": "Monthly\nQuarterly\nHalf-Yearly\nYearly"
+  },
+  {
+   "fieldname": "last_maintenance_date",
+   "fieldtype": "Date",
+   "label": "Last Maintenance Date"
+  },
+  {
+   "fieldname": "next_maintenance_date",
+   "fieldtype": "Date",
+   "label": "Next Maintenance Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Equipment Register",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-27 16:50:00.000000",
+ "modified_by": "Administrator",
+ "module": "Facility Management",
+ "name": "Equipment Register",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "read": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

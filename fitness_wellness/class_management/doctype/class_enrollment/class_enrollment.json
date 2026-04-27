@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:ENR-{YYYY}-{####}",
+ "creation": "2026-04-27 17:15:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enrollment_sb",
+  "member",
+  "class_schedule",
+  "column_break_4",
+  "enrollment_date",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "enrollment_sb",
+   "fieldtype": "Section Break",
+   "label": "Enrollment Details"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member",
+   "options": "Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "class_schedule",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Class Schedule",
+   "options": "Class Schedule",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "enrollment_date",
+   "fieldtype": "Date",
+   "label": "Enrollment Date",
+   "default": "Today"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Enrolled\nCancelled\nWaitlisted",
+   "default": "Enrolled"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Class Enrollment",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-27 17:15:00.000000",
+ "modified_by": "Administrator",
+ "module": "Class Management",
+ "name": "Class Enrollment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "read": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

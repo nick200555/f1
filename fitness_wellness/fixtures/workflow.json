@@ -1,0 +1,32 @@
+[
+ {
+  "doctype": "Workflow",
+  "document_type": "Member",
+  "is_active": 1,
+  "name": "Member Onboarding Workflow",
+  "override_status": 1,
+  "states": [
+   {
+    "allow_edit": "System Manager",
+    "state": "Pending Verification",
+    "update_field": "status",
+    "update_value": "Inactive"
+   },
+   {
+    "allow_edit": "System Manager",
+    "state": "Active",
+    "update_field": "status",
+    "update_value": "Active"
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Verify",
+    "allowed": "System Manager",
+    "next_state": "Active",
+    "state": "Pending Verification"
+   }
+  ],
+  "workflow_state_field": "workflow_state"
+ }
+]

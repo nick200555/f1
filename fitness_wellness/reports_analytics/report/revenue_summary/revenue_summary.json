@@ -1,0 +1,33 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2026-04-27 17:10:00.000000",
+ "disabled": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "reqd": 1,
+   "default": "Today"
+  }
+ ],
+ "is_standard": "Yes",
+ "modified": "2026-04-27 17:10:00.000000",
+ "modified_by": "Administrator",
+ "module": "Reports Analytics",
+ "name": "Revenue Summary",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Sales Invoice",
+ "report_name": "Revenue Summary",
+ "report_type": "Script Report"
+}

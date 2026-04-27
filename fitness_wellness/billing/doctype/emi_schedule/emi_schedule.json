@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:EMI-{YYYY}-{####}",
+ "creation": "2026-04-27 17:05:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "emi_details_sb",
+  "member",
+  "total_amount",
+  "column_break_4",
+  "no_of_installments",
+  "start_date",
+  "status",
+  "installments_section",
+  "installments",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "emi_details_sb",
+   "fieldtype": "Section Break",
+   "label": "EMI Details"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member",
+   "options": "Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_of_installments",
+   "fieldtype": "Int",
+   "label": "No. of Installments",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nActive\nCompleted\nCancelled",
+   "default": "Draft"
+  },
+  {
+   "fieldname": "installments_section",
+   "fieldtype": "Section Break",
+   "label": "Installments Table"
+  },
+  {
+   "fieldname": "installments",
+   "fieldtype": "Table",
+   "label": "Installments",
+   "options": "EMI Instalment"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "EMI Schedule",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-27 17:05:00.000000",
+ "modified_by": "Administrator",
+ "module": "Billing",
+ "name": "EMI Schedule",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "read": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

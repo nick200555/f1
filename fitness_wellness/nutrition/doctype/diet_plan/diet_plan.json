@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:DP-{YYYY}-{####}",
+ "creation": "2026-04-27 17:20:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "diet_details_sb",
+  "member",
+  "plan_name",
+  "column_break_4",
+  "start_date",
+  "end_date",
+  "status",
+  "macros_sb",
+  "total_calories",
+  "total_protein",
+  "total_carbs",
+  "total_fats",
+  "diet_days_section",
+  "diet_days",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "diet_details_sb",
+   "fieldtype": "Section Break",
+   "label": "Diet Details"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member",
+   "options": "Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "label": "Plan Name"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nExpired\nCancelled"
+  },
+  {
+   "fieldname": "macros_sb",
+   "fieldtype": "Section Break",
+   "label": "Daily Macros"
+  },
+  {
+   "fieldname": "total_calories",
+   "fieldtype": "Float",
+   "label": "Total Calories"
+  },
+  {
+   "fieldname": "total_protein",
+   "fieldtype": "Float",
+   "label": "Total Protein (g)"
+  },
+  {
+   "fieldname": "total_carbs",
+   "fieldtype": "Float",
+   "label": "Total Carbs (g)"
+  },
+  {
+   "fieldname": "total_fats",
+   "fieldtype": "Float",
+   "label": "Total Fats (g)"
+  },
+  {
+   "fieldname": "diet_days_section",
+   "fieldtype": "Section Break",
+   "label": "Diet Days"
+  },
+  {
+   "fieldname": "diet_days",
+   "fieldtype": "Table",
+   "label": "Diet Days",
+   "options": "Diet Day"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Diet Plan",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-27 17:20:00.000000",
+ "modified_by": "Administrator",
+ "module": "Nutrition",
+ "name": "Diet Plan",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "read": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

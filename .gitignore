@@ -1,0 +1,16 @@
+*.pyc
+*.pyo
+__pycache__/
+*.swp
+*.swo
+.DS_Store
+node_modules/
+sites/
+logs/
+assets/
+env/
+venv/
+local_config.json
+backups/
+config/*.json
+!config/modules_management.json

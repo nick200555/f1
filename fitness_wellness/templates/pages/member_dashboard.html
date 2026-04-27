@@ -1,0 +1,39 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="member-dashboard">
+    <h1>Welcome, {{ frappe.session.user_fullname }}</h1>
+    
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-5 bg-white rounded">
+                <h5>Membership Status</h5>
+                <p id="membership-status">Loading...</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-5 bg-white rounded">
+                <h5>Next Class</h5>
+                <p id="next-class">None Scheduled</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-5 bg-white rounded">
+                <h5>Total Attendance</h5>
+                <p id="total-attendance">0</p>
+            </div>
+        </div>
+    </div>
+
+    <h3>Your Latest Metrics</h3>
+    <canvas id="progressChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Mock logic for fetching data
+    frappe.ready(function() {
+        // Fetch logic would go here
+    });
+</script>
+{% endblock %}

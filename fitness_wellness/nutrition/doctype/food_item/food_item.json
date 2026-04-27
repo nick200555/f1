@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:item_name",
+ "creation": "2026-04-27 17:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item_details_sb",
+  "item_name",
+  "unit",
+  "column_break_4",
+  "calories_per_unit",
+  "protein_per_unit",
+  "carbs_per_unit",
+  "fats_per_unit"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_details_sb",
+   "fieldtype": "Section Break",
+   "label": "Item Details"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Select",
+   "label": "Unit",
+   "options": "Gram\nML\nServing\nPiece",
+   "default": "Gram"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "calories_per_unit",
+   "fieldtype": "Float",
+   "label": "Calories per Unit"
+  },
+  {
+   "fieldname": "protein_per_unit",
+   "fieldtype": "Float",
+   "label": "Protein per Unit (g)"
+  },
+  {
+   "fieldname": "carbs_per_unit",
+   "fieldtype": "Float",
+   "label": "Carbs per Unit (g)"
+  },
+  {
+   "fieldname": "fats_per_unit",
+   "fieldtype": "Float",
+   "label": "Fats per Unit (g)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-27 17:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Nutrition",
+ "name": "Food Item",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "read": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

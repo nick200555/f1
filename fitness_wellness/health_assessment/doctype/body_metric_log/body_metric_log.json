@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:BML-{YYYY}-{####}",
+ "creation": "2026-04-27 16:55:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "metric_sb",
+  "member",
+  "date",
+  "column_break_4",
+  "weight",
+  "height",
+  "bmi",
+  "composition_sb",
+  "body_fat",
+  "muscle_mass",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "metric_sb",
+   "fieldtype": "Section Break",
+   "label": "Metric Details"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member",
+   "options": "Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight (kg)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height (cm)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bmi",
+   "fieldtype": "Float",
+   "label": "BMI",
+   "read_only": 1
+  },
+  {
+   "fieldname": "composition_sb",
+   "fieldtype": "Section Break",
+   "label": "Body Composition"
+  },
+  {
+   "fieldname": "body_fat",
+   "fieldtype": "Percent",
+   "label": "Body Fat (%)"
+  },
+  {
+   "fieldname": "muscle_mass",
+   "fieldtype": "Float",
+   "label": "Muscle Mass (kg)"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Body Metric Log",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-27 16:55:00.000000",
+ "modified_by": "Administrator",
+ "module": "Health Assessment",
+ "name": "Body Metric Log",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "read": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
