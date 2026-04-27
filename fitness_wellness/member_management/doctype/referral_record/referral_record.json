@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:REF-{YYYY}-{####}",
+ "creation": "2026-04-27 17:30:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "referring_member",
+  "referred_member",
+  "referral_date",
+  "status",
+  "reward_amount"
+ ],
+ "fields": [
+  {
+   "doctype": "DocField",
+   "fieldname": "referring_member",
+   "fieldtype": "Link",
+   "label": "Referring Member",
+   "options": "Member",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "referred_member",
+   "fieldtype": "Link",
+   "label": "Referred Member",
+   "options": "Member",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "referral_date",
+   "fieldtype": "Date",
+   "label": "Referral Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nConverted\nRejected",
+   "default": "Pending"
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "reward_amount",
+   "fieldtype": "Currency",
+   "label": "Reward Amount"
+  }
+ ],
+ "is_submittable": 0,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-27 17:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "Member Management",
+ "name": "Referral Record",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

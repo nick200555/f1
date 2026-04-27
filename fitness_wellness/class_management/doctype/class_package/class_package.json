@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:package_name",
+ "creation": "2026-04-27 17:30:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "package_name",
+  "class_type",
+  "no_of_classes",
+  "price",
+  "validity_days"
+ ],
+ "fields": [
+  {
+   "doctype": "DocField",
+   "fieldname": "package_name",
+   "fieldtype": "Data",
+   "label": "Package Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "class_type",
+   "fieldtype": "Link",
+   "label": "Class Type",
+   "options": "Class Type"
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "no_of_classes",
+   "fieldtype": "Int",
+   "label": "Number of Classes",
+   "reqd": 1
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price",
+   "reqd": 1
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "validity_days",
+   "fieldtype": "Int",
+   "label": "Validity (Days)"
+  }
+ ],
+ "is_submittable": 0,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-27 17:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "Class Management",
+ "name": "Class Package",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

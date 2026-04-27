@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:NG-{YYYY}-{####}",
+ "creation": "2026-04-27 17:30:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "daily_calories",
+  "daily_protein",
+  "daily_carbs",
+  "daily_fats",
+  "start_date"
+ ],
+ "fields": [
+  {
+   "doctype": "DocField",
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Member",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "daily_calories",
+   "fieldtype": "Float",
+   "label": "Daily Calories",
+   "reqd": 1
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "daily_protein",
+   "fieldtype": "Float",
+   "label": "Protein (g)"
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "daily_carbs",
+   "fieldtype": "Float",
+   "label": "Carbs (g)"
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "daily_fats",
+   "fieldtype": "Float",
+   "label": "Fats (g)"
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "default": "Today"
+  }
+ ],
+ "is_submittable": 0,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-27 17:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "Nutrition",
+ "name": "Nutrition Goal",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:FG-{YYYY}-{####}",
+ "creation": "2026-04-27 17:30:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "goal_name",
+  "target_value",
+  "baseline_value",
+  "current_value",
+  "progress",
+  "target_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "doctype": "DocField",
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Member",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "goal_name",
+   "fieldtype": "Data",
+   "label": "Goal",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "target_value",
+   "fieldtype": "Float",
+   "label": "Target Value"
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "baseline_value",
+   "fieldtype": "Float",
+   "label": "Baseline Value"
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "current_value",
+   "fieldtype": "Float",
+   "label": "Current Value"
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "progress",
+   "fieldtype": "Percent",
+   "label": "Progress (%)",
+   "read_only": 1
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "target_date",
+   "fieldtype": "Date",
+   "label": "Target Date"
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nAchieved\nAbandoned",
+   "default": "Active"
+  }
+ ],
+ "is_submittable": 0,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-27 17:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "Health Assessment",
+ "name": "Fitness Goal",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

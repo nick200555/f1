@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "creation": "2026-04-27 17:30:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "equipment",
+  "equipment_name",
+  "category",
+  "status",
+  "last_maintenance_date",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "doctype": "DocField",
+   "fieldname": "equipment",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Equipment",
+   "options": "Equipment Register",
+   "reqd": 1
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "equipment_name",
+   "fieldtype": "Data",
+   "fetch_from": "equipment.equipment_name",
+   "in_list_view": 1,
+   "label": "Equipment Name",
+   "read_only": 1
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Category",
+   "read_only": 1
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Operational\nUnder Maintenance\nOut of Service"
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "last_maintenance_date",
+   "fieldtype": "Date",
+   "label": "Last Maintenance Date"
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-27 17:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "Facility Management",
+ "name": "Equipment Row",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

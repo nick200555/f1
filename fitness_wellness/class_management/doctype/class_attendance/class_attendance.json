@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:CATT-{YYYY}-{####}",
+ "creation": "2026-04-27 17:30:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "class_schedule",
+  "attendance_date",
+  "attendance_rows"
+ ],
+ "fields": [
+  {
+   "doctype": "DocField",
+   "fieldname": "class_schedule",
+   "fieldtype": "Link",
+   "label": "Class Schedule",
+   "options": "Class Schedule",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "attendance_date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "doctype": "DocField",
+   "fieldname": "attendance_rows",
+   "fieldtype": "Table",
+   "label": "Attendance",
+   "options": "Attendance Row"
+  }
+ ],
+ "is_submittable": 0,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-27 17:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "Class Management",
+ "name": "Class Attendance",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
