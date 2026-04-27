@@ -8,7 +8,7 @@ app_license = "mit"
 # Apps
 # ------------------
 
-# required_apps = ["frappe", "erpnext"]
+required_apps = ["frappe", "erpnext"]
 
 # Each item in the list will be added as a background job
 # scheduler_events = {

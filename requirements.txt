@@ -1,2 +1,2 @@
-frappe~=15.0.0
-erpnext~=15.0.0
+# No external dependencies required here. 
+# Apps dependencies are managed via hooks.py's required_apps.
