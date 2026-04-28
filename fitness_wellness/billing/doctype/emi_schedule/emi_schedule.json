@@ -21,7 +21,8 @@
   {
    "fieldname": "emi_details_sb",
    "fieldtype": "Section Break",
-   "label": "EMI Details"
+   "label": "EMI Details",
+   "doctype": "DocField"
   },
   {
    "fieldname": "member",
@@ -29,48 +30,56 @@
    "in_list_view": 1,
    "label": "Member",
    "options": "Member",
-   "reqd": 1
+   "reqd": 1,
+   "doctype": "DocField"
   },
   {
    "fieldname": "total_amount",
    "fieldtype": "Currency",
    "label": "Total Amount",
-   "reqd": 1
+   "reqd": 1,
+   "doctype": "DocField"
   },
   {
    "fieldname": "column_break_4",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "doctype": "DocField"
   },
   {
    "fieldname": "no_of_installments",
    "fieldtype": "Int",
    "label": "No. of Installments",
-   "reqd": 1
+   "reqd": 1,
+   "doctype": "DocField"
   },
   {
    "fieldname": "start_date",
    "fieldtype": "Date",
    "label": "Start Date",
    "reqd": 1,
-   "default": "Today"
+   "default": "Today",
+   "doctype": "DocField"
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
    "options": "Draft\nActive\nCompleted\nCancelled",
-   "default": "Draft"
+   "default": "Draft",
+   "doctype": "DocField"
   },
   {
    "fieldname": "installments_section",
    "fieldtype": "Section Break",
-   "label": "Installments Table"
+   "label": "Installments Table",
+   "doctype": "DocField"
   },
   {
    "fieldname": "installments",
    "fieldtype": "Table",
    "label": "Installments",
-   "options": "EMI Instalment"
+   "options": "EMI Instalment",
+   "doctype": "DocField"
   },
   {
    "fieldname": "amended_from",
@@ -79,13 +88,14 @@
    "no_copy": 1,
    "options": "EMI Schedule",
    "print_hide": 1,
-   "read_only": 1
+   "read_only": 1,
+   "doctype": "DocField"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-04-28 10:00:00.000000",
+ "modified": "2026-04-28 10:05:00.000000",
  "modified_by": "Administrator",
  "module": "Billing",
  "name": "EMI Schedule",
