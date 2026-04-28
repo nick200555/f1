@@ -1,12 +1,14 @@
 [
  {
   "doctype": "Workflow State",
+  "name": "Pending Verification",
   "workflow_state_name": "Pending Verification",
   "icon": "review",
   "style": "Warning"
  },
  {
   "doctype": "Workflow State",
+  "name": "Active",
   "workflow_state_name": "Active",
   "icon": "check",
   "style": "Success"

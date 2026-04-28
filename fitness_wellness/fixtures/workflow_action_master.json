@@ -1,6 +1,7 @@
 [
  {
   "doctype": "Workflow Action Master",
+  "name": "Verify",
   "workflow_action_name": "Verify"
  }
 ]
