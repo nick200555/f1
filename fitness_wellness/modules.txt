@@ -6,3 +6,4 @@ Health Assessment
 Nutrition
 Billing
 Reports Analytics
+Fitness Wellness
